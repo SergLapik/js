@@ -1,5 +1,7 @@
+const param = require("param");
+
 module.exports = (data) => {
-    data.hello = param;
+    data.hello = data.param;
 
     return data;
 };
