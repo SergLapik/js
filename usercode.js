@@ -1,5 +1,5 @@
 module.exports = (data) => {
-    data.hello = data.param;
+    data.hello = param;
 
     return data;
 };
