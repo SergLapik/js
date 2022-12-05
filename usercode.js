@@ -1,5 +1,3 @@
-module.exports = (data) => {
-    data.hello = "HELLO";
+const Nexmo = require('nexmo');
 
-    return data;
-};
+const jwt = Nexmo.generateJwt('path/to/private.key', {application_id: APP_ID});
