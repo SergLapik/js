@@ -1,5 +1,5 @@
 module.exports = (data) => {
-    data.a = "1";
+    data.a = "2";
 
     return data;
 };
