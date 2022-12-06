@@ -32,7 +32,7 @@ SslxMRpFDO2XLTRLoT0nUQyP'
 var unsignedToken = base64urlEncode(header) + '.' + base64urlEncode(payload)
 var signature = HMAC-SHA256(unsignedToken, SECRET_KEY)
 
-data.token = encodeBase64Url(data.header) + '.' + encodeBase64Url(data.payload) + '.' + encodeBase64Url(data.signature)
+data.token = encodeBase64Url(header) + '.' + encodeBase64Url(payload) + '.' + encodeBase64Url(signature)
     
     return data;
 };
