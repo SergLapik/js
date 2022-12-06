@@ -9,7 +9,7 @@ var SECRET_KEY = '3';
     
 
 
-data.token = header;
+data.token = 2;
     
     return data;
 };
