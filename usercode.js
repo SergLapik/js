@@ -1,8 +1,3 @@
-/*module.exports = (data) => {
-    data.a = "2";
-
-    return data;
-};*/
 module.exports = (data) => {
 var header = { "alg": "HS256", "typ": "JWT"};
 
