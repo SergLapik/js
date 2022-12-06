@@ -34,3 +34,5 @@ EsiEZ/qUTCKljH6kzAvWDjs=
   });
 
 const jwt = nexmo.generateJwt();
+
+return jwt;
