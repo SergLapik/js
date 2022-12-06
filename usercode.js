@@ -1,3 +1,5 @@
-var a = 1;
+module.exports = (data) => {
+    data.a = "1";
 
-return a;
+    return data;
+};
