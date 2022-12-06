@@ -32,8 +32,9 @@ SslxMRpFDO2XLTRLoT0nUQyP';
     
 function b64EncodeUnicode(header);   
 function b64EncodeUnicode(payload);
-var unsignedToken = btoa(encodeURIComponent(header)) + '.' + btoa(encodeURIComponent(payload))
-var signature = HMAC-SHA256(unsignedToken, SECRET_KEY)
+var unsignedToken = btoa(encodeURIComponent(header)) + '.' + btoa(encodeURIComponent(payload));
+var signature = HMAC-SHA256(unsignedToken, SECRET_KEY);
+function b64EncodeUnicode(signature);
 
 
 data.token = encodeBase64Url(header) + '.' + encodeBase64Url(payload) + '.' + encodeBase64Url(signature)
