@@ -44,4 +44,6 @@ token = jwt.encode(
     algorithm='RS256'
 )
 
-print(token)
+def handle(data):
+    data[token] = token
+    return data
