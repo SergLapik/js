@@ -1,6 +1,9 @@
+import jwt
+import serialization
 
 
-payload_data = {
+def handle(data):
+ payload_data = {
   "iat": 1670430472,
   "exp": 1671035272,
   "jti": "8TSuQqpkpAQC",
@@ -42,6 +45,6 @@ token = jwt.encode(
     algorithm='RS256'
 )
 
-def handle(data):
+
     data[token] = token
     return data
