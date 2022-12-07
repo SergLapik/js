@@ -1,5 +1,5 @@
-import cryptography.hazmat.primitives 
-import serialization
+import jwt
+from cryptography.hazmat.primitives import serialization
 
 payload_data = {
   "iat": 1670430472,
