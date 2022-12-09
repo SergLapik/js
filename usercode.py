@@ -1,6 +1,17 @@
-pip install pyjwt
-import jwt
-from cryptography.hazmat.primitives import serialization
+import json
+from datetime import datetime, timedelta, timezone
+
+from jwt import (
+    JWT,
+    jwk_from_dict,
+    jwk_from_pem,
+)
+from jwt.utils import get_int_from_datetime
+
+
+instance = JWT()
+
+
 def handle(data):
   payload_data = {
   "iat": 1670430472,
