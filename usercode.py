@@ -1,3 +1,4 @@
+$ pip install pyjwt
 import jwt
 from cryptography.hazmat.primitives import serialization
 def handle(data):
