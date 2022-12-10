@@ -1,8 +1,5 @@
 import jwt
-
-def handle(data):
-    data["hello"] = "Hello world!"
-    return data
+from cryptography.hazmat.primitives import serialization
 
 payload_data = {
   "iat": 1670688000,
@@ -20,3 +17,7 @@ token = jwt.encode(
     algorithm='HS256')
 
 print (token)
+
+def handle(data):
+    data["hello"] = "Hello world!"
+    return data
