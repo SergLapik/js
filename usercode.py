@@ -12,8 +12,7 @@ def handle(data):
 	token = jwt.encode(
       		payload=payload_data,
       		key=key,
-      		algorithm='HS256'
-    )
+      		algorithm='HS256')
    
     	data["token"] = token
     	return data
