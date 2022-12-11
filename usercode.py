@@ -7,10 +7,10 @@ def handle(data):
       		"application_id": data["application_id"]
 	 }
 	key = data["key"]
-    	token = jwt.encode(
-      	payload=payload_data,
-      	key=key,
-      	algorithm='HS256'
+    		token = jwt.encode(
+      		payload=payload_data,
+      		key=key,
+      		algorithm='HS256'
     )
    
     	data["token"] = token
